@@ -1,5 +1,5 @@
 package com.briup.apps.sms.service;
 
-public class UserService {
+public interface UserService {
 
 }
