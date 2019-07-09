@@ -1,5 +1,9 @@
 package com.briup.apps.sms.web.controller;
-
+/**
+ * 
+ * @author 蔡
+ *
+ */
 public class SchoolController {
 	private Long id;
 	private String name;
