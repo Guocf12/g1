@@ -23,7 +23,7 @@ public class StudentCourceServiceImpl implements StudentCourceService {
 
 	@Override
 	public void saveOrUpdate(StudentCource studentCource) throws Exception {
-		if(StudentCource.getId()==null) {
+		if(studentCource.getId()==null) {
 			studentCourceDao.insert(studentCource);
 		}else {
 			studentCourceDao.update(studentCource);
