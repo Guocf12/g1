@@ -1,5 +1,5 @@
 package com.briup.apps.sms.web.controller;
 
-public class StudetCourceController {
+public class StudentCourceController {
 
 }
