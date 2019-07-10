@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.briup.apps.sms.dao.RoleDao">
-  <select id="selectAll" resultType="com.briup.apps.sms.bean.User">
-    select * from sms_user
+  <select id="selectAll" resultType="com.briup.apps.sms.bean.Role">
+    select * from sms_role
   </select>
 </mapper>
