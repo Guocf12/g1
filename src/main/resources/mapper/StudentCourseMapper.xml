@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.briup.apps.sms.dao.StudentCourceDao">
-  <select id="selectAll" resultType="com.briup.apps.sms.bean.StudentCource">
+<mapper namespace="com.briup.apps.sms.dao.StudentCourseDao">
+  <select id="selectAll" resultType="com.briup.apps.sms.bean.StudentCourse">
     select * from sms_student_course
   </select>
 </mapper>
