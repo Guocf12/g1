@@ -18,7 +18,7 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-	//http://localhost:8080/school/selectAll
+	//http://localhost:8080/user/selectAll
 @GetMapping("selectAll")
 public List<User> selectAll(){
 	return userService.selectAll();
