@@ -1,14 +1,14 @@
 package com.briup.apps.sms.bean;
 
 public class College {
-	private long id;
+	private Long id;
 	private String name;
 	private String description;
-	private long shool_id;
-	public long getId() {
+	private Long shool_id;
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -23,11 +23,12 @@ public class College {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public long getShool_id() {
+	public Long getShool_id() {
 		return shool_id;
 	}
-	public void setShool_id(long shool_id) {
+	public void setShool_id(Long shool_id) {
 		this.shool_id = shool_id;
 	}
+	
 
 }
