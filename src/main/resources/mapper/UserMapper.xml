@@ -10,7 +10,7 @@
   
   
   <insert id="insert">
-  insert into sms_user values(null,#{realname},#{telephone},#{passward},#{student_no},#{gender},#{clazz_id});
+  insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id});
   </insert>
   
   <update id="update">
@@ -19,7 +19,7 @@
   descripation=#{description},
   set telphone=#{telphone},
   descripation=#{description},
-   set passsward=#{passward},
+   set passsword=#{password},
   descripation=#{description}, 
   set student_no=#{student_no},
   descripation=#{description}, 
