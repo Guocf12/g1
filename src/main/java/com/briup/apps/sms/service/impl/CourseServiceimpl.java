@@ -30,17 +30,15 @@ public class CourseServiceimpl implements CourseService{
 	}
 
 	public void saveOrUpdate(Course course) throws Exception {
-	 
-
-		if(course.getId()==null) {
+	 		if(course.getId()==null) {
 			courseDao.insert(course);
 		} else {
 			courseDao.update(course);
 		}
-		
-		
-	}
+	 	}
 	
-   
-   
+			@Override
+			public void deleteById(long id) throws Exception {
+		    courseDao.deleteById(id);
+			}
 }

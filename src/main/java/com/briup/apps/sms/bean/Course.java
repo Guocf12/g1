@@ -1,5 +1,7 @@
 package com.briup.apps.sms.bean;
-
+/*
+ * 课程信息
+ * */
 public class Course {
 	private Long id;
     private String name; 
