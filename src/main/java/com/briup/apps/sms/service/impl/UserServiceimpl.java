@@ -40,7 +40,10 @@ public class UserServiceimpl implements UserService{
 		
 		
 	}
-	
+	@Override
+	public void deleteById(long id) throws Exception{
+		userDao.deleteById(id);
+	}
    
    
 }

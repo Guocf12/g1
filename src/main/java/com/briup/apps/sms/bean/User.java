@@ -7,7 +7,7 @@ public class User {
 	private String student_no;
 	private String gender ;
 	private Long clazz_id;
-	public Long getId() {
+	public  Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
