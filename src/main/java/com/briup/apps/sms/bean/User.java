@@ -4,6 +4,7 @@ public class User {
 	private Long id;
 	private String realname;
 	private String telephone;
+	private String password;
 	private String student_no;
 	private String gender ;
 	private Long clazz_id;
