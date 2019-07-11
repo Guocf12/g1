@@ -19,6 +19,10 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+	@GetMapping("selectAll")
+	public List<User> selectAll(){
+		return userService.selectAll();}
+
 	@PostMapping("saveOrUpdate")
 	public String saveOrUpdate(User user) {
 		try { 
