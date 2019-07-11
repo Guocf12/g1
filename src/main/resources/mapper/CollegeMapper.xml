@@ -7,7 +7,7 @@
     select * from sms_college
   </select>
   <insert id="insert">
-  insert into sms_college values(null,#{id},#{name},#{description},#{shool_id})
+  insert into sms_college values(null,#{id},#{name},#{description},#{school_id})
  
   </insert>
   <update id="update">
@@ -15,7 +15,7 @@
   set name=#{id},
   name=#{name},
   description=#{ description},
-  school_id=#{school_id},
+  shool_id=#{school_id},
   
   </update>
   <delete id="deleteById">

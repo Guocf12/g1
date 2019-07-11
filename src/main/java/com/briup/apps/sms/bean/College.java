@@ -4,7 +4,7 @@ public class College {
 	private Long id;
 	private String name;
 	private String description;
-	private Long shool_id;
+	private Long school_id;
 	public Long getId() {
 		return id;
 	}
@@ -23,11 +23,11 @@ public class College {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Long getShool_id() {
-		return shool_id;
+	public Long getSchool_id() {
+		return school_id;
 	}
-	public void setShool_id(Long shool_id) {
-		this.shool_id = shool_id;
+	public void setSchool_id(Long school_id) {
+		this.school_id = school_id;
 	}
 	
 
