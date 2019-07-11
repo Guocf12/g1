@@ -28,7 +28,7 @@
   set lazz_id=#{lazz_id},
   descripation=#{description},
   tel=#{tel},
-  adderss=#{address}
+  address=#{address}
   where id = #{id}
   </update>
   
