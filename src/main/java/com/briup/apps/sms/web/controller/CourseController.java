@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Course;
+import com.briup.apps.sms.bean.CourseExtend;
 import com.briup.apps.sms.service.CourseService;
 
 @RestController
@@ -32,24 +33,31 @@ public class CourseController {
 			return e.getMessage();
 		}
 	}
-	
-	//http://localhost:8080/course/selectAll
-	@GetMapping("selectAll")
-	public List<Course> selectAll(){
-		return courseService.selectAll();
-	}
+		
+		//http://localhost:8080/course/selectAll
+		@GetMapping("selectAll")
+		public List<Course> selectAll(){
+			return courseService.selectAll();
+		}
+		
+		@GetMapping("selectAllWithTeacher")
+		public List<CourseExtend> selectAllWithTeacher(){
+			return courseService.selectAllWithTeacher();
+		}
+		
 		// http://localhost:8080/course/deleteById?id=5
 		@GetMapping("deleteById")
-		public String deleteById(long id) {
-			try {
+		public String deleteById(long id)
+		{
+			try 
+			{
 				courseService.deleteById(id);
 				return "删除成功";
-			} catch (Exception e) {
+			} 
+			catch (Exception e) {
 				// 打印异常信息，返回异常信息
 				e.printStackTrace();
 				return e.getMessage();
 			}
 		}	
-		
-
 }

@@ -7,6 +7,16 @@
     select * from sms_course
   </select>
   
+  <select id="selectAllWithTeacher" resultType="com.briup.apps.sms.bean.CourseExtend">
+  	select c.id as id,
+  	c.name as name ,
+  	c.credit as credit,
+  	c.user_id as user_id,
+  	u.realname as teacherName
+	from sms_course as c left join sms_user as u
+	on c.user_id = u.id;
+  </select>
+  
   
   <insert id="insert">
   insert into sms_course values(null,#{name},#{credit},#{user_id});
