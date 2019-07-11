@@ -39,7 +39,7 @@ public String saveOrUpdate(Role role) {
 	@GetMapping("deleteById")
 	public String deleteById(long id) {
 	try { 
-		roleService.deleteByID(id);
+		roleService.deleteById(id);
 		return "删除成功";
 	} catch (Exception e) {
 		// 打印异常信息，返回异常信息

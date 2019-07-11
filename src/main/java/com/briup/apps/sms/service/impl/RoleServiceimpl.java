@@ -27,11 +27,18 @@ public class RoleServiceimpl implements RoleService {
 
 	@Override
 	public void saveOrUpdate(Role role) throws Exception {
+		if(role.getId()==null) {
+			roleDao.insert(role);
+		}else {
+			roleDao.update(role);
+		}
 	}
 	@Override
-	public void deleteByID(long id) throws Exception {
-		roleDao.deleteByID(id);
+	public void deleteById(long id) throws Exception {
+		roleDao.deleteById(id);
 	}
+
+	
 }
 
 

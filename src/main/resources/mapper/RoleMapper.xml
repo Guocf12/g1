@@ -14,11 +14,11 @@
 	  	update sms_role
 		set name=#{name}
 		
-		where id = #{id}
+		where id = #{id};
 	  </update>
 	
 	  <delete id="deleteById">
-	  	delete from sms_role where id = #{id}
+	  	delete from sms_role where id = #{id};
 	  </delete>
 	
   
