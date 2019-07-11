@@ -6,4 +6,20 @@
   <select id="selectAll" resultType="com.briup.apps.sms.bean.College">
     select * from sms_college
   </select>
+  <insert id="insert">
+  insert into sms_college values(null,#{id},#{name},#{description},#{shool_id})
+ 
+  </insert>
+  <update id="update">
+  update sms_college 
+  set name=#{id},
+  name=#{name},
+  description=#{ description},
+  school_id=#{school_id},
+  
+  </update>
+  <delete id="deleteById">
+  delete from sms_college where id = #{id}
+  </delete>
+  
 </mapper>
