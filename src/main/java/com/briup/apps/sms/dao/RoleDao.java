@@ -11,5 +11,6 @@ public interface RoleDao {
     void insert (Role role);
     //更新
     void update (Role role);
-    //
+    //通过ID删除
+    void deleteByID(long id);
 }

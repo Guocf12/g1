@@ -15,7 +15,7 @@ import com.briup.apps.sms.service.RoleService;
  * */
 @Service
 public class RoleServiceimpl implements RoleService {
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
+	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
 	@Resource
 	private RoleDao roleDao;
 
@@ -27,11 +27,13 @@ public class RoleServiceimpl implements RoleService {
 
 	@Override
 	public void saveOrUpdate(Role role) throws Exception {
-		if(role.getId()==null) {
-			roleDao.insert(role);
-		} else {
-			roleDao.update(role);
-		}
-		
+	}
+	@Override
+	public void deleteByID(long id) throws Exception {
+		roleDao.deleteByID(id);
 	}
 }
+
+
+
+	 
