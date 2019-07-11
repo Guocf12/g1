@@ -20,20 +20,17 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	@PostMapping("saveOrUpdate")
-	public String saveOrUpfate(User user) {
-		try {
-			
+	public String saveOrUpdate(User user) {
+		try { 
+			userService.saveOrUpdate(user);
+			return "保存或更新成功";
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
+			return e.getMessage();
 		}
 	}
-	//http://localhost:8080/user/selectAll
-@GetMapping("selectAll")
-public List<User> selectAll(){
-	return userService.selectAll();
-	
-}
-//http://localhost:8080/school/deleteById?id=3
+	// http://localhost:8080/school/selectAll
 @GetMapping("deleteById")
 public String deleteById(long id) {
 	try {

@@ -10,13 +10,23 @@
   
   
   <insert id="insert">
-  insert into sms_user values(id,realname,telephone,passward,student_no,gender,lazz_id)
+  insert into sms_user values(null,#{realname},#{telephone},#{passward},#{student_no},#{gender},#{clazz_id});
   </insert>
   
   <update id="update">
   update sms_user
-  set name=#{name},
-  descripation=#{description}
+  set realname=#{renalname},
+  descripation=#{description},
+  set telphone=#{telphone},
+  descripation=#{description},
+   set passsward=#{passward},
+  descripation=#{description}, 
+  set student_no=#{student_no},
+  descripation=#{description}, 
+  set gender=#{gender},
+  descripation=#{description}, 
+  set lazz_id=#{lazz_id},
+  descripation=#{description},
   tel=#{tel},
   adderss=#{address}
   where id = #{id}
