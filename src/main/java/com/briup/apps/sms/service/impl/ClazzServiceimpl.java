@@ -11,7 +11,7 @@ import com.briup.apps.sms.dao.ClazzDao;
 import com.briup.apps.sms.service.ClazzService;
 
 /**
-*校园逻辑逻辑处理的实现类
+*班级业务逻辑处理的实现类
 **/
 
 @Service
@@ -31,13 +31,18 @@ public class ClazzServiceimpl implements ClazzService{
 
 	public void saveOrUpdate(Clazz clazz) throws Exception {
 	 
-
 		if(clazz.getId()==null) {
 			clazzDao.insert(clazz);
 		} else {
 			clazzDao.update(clazz);
 		}
 		
+		
+	}
+
+	@Override
+	public void deleteById(long id) throws Exception {
+		clazzDao.delectById(id);
 		
 	}
 	
