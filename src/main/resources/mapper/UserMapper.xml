@@ -15,7 +15,7 @@
   
   <update id="update">
   update sms_user
-  set realname=#{renalname},
+  set realname=#{realname},
   descripation=#{description},
   set telphone=#{telphone},
   descripation=#{description},
