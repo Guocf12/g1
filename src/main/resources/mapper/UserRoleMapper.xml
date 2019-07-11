@@ -4,14 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.briup.apps.sms.dao.UserRoleDao">
   <select id="selectAll" resultType="com.briup.apps.sms.bean.UserRole">
-    select * from sms_user_role
+    select * from sms_user_role;
   </select>
    <insert id="insert">
   	insert into sms_user_role values(null,#{user_id},#{role_id});
   </insert>
 
   <update id="update">
-  	update sms_user_role
+  	update sms_user_role;
 	set user_id=#{user_id},
 	    role_id#{role_id}
 	where id = #{id}
