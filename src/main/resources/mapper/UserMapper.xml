@@ -32,7 +32,7 @@
   where id = #{id}
   </update>
   
-  <delete id="deeleteById">
+  <delete id="deleteById">
   
   delete from sms_user where id = #{id}
   </delete>
