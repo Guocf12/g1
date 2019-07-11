@@ -30,10 +30,16 @@ public class UserRoleServiceimpl implements UserRoleService{
 	public void saveOrUpdate(UserRole userRole) throws Exception {
 		// TODO Auto-generated method stub
 
+
 		if(userRole.getId()==null) {
 			userRoleDao.insert(userRole);
 		} else {
 			userRoleDao.update(userRole);
 		}	
+	}
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		userRoleDao.deleteById(id);
+
 	}
 }

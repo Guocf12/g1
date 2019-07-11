@@ -13,4 +13,7 @@ public interface UserRoleDao {
 	//插入
 	void update(UserRole userRole);
     //更新
+	void deleteById(long id);
+	// 通过ID删除
+	
 }
