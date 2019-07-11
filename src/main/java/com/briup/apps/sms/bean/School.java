@@ -1,6 +1,6 @@
 package com.briup.apps.sms.bean;
 /**
- * 学校信息
+ * 学校信息系统
  * @author 蔡
  *
  */
