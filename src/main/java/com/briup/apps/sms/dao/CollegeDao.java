@@ -10,5 +10,8 @@ public interface CollegeDao {
     void insert (College college);
     //更新
     void update (College college);
+    //删除
+    void deleteById(long id);
+    
     
 }
