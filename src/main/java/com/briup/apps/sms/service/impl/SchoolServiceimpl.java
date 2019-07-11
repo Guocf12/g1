@@ -35,6 +35,9 @@ public class SchoolServiceimpl implements SchoolService{
 			}
 		}
 		
-   
+	@Override
+	public void deleteById(long id) throws Exception{
+		schoolDao.deleteById(id);
+	}
    
 	}

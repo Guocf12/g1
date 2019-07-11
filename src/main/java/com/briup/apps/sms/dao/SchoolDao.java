@@ -11,4 +11,6 @@ public interface SchoolDao {
 	void insert(School school);
 	//更新
 	void update(School school);
+	//删除
+	void deleteById(long id);
 }
