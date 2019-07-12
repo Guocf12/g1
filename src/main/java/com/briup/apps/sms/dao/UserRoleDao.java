@@ -16,7 +16,8 @@ public interface UserRoleDao {
 	void update(UserRole userRole);
    
 	// 通过ID删除
-	void deleteById(long id);
+	 void deleteById(long id) ;
+		// TODO Auto-generated method s
 	
 	
 }
